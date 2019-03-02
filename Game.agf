@@ -53,7 +53,7 @@
       <NumberDialogOptions>None</NumberDialogOptions>
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <SpeechPortraitSide>Left</SpeechPortraitSide>
-      <TextWindowGUI>7</TextWindowGUI>
+      <TextWindowGUI>6</TextWindowGUI>
       <AlwaysDisplayTextAsSpeech>False</AlwaysDisplayTextAsSpeech>
       <FontsForHiRes>False</FontsForHiRes>
       <AntiAliasFonts>False</AntiAliasFonts>
@@ -641,6 +641,14 @@
             <Number>2</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>3</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>4</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -651,82 +659,19 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>17</Height>
-              <Width>256</Width>
-              <Left>0</Left>
-              <Top>0</Top>
-              <Clickable>True</Clickable>
-              <Visibility>Normal</Visibility>
-              <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
-              <BorderColor>32089</BorderColor>
-              <Transparency>0</Transparency>
-              <BackgroundColor>32089</BackgroundColor>
-              <BackgroundImage>0</BackgroundImage>
-              <ID>0</ID>
-              <Name>gStatusline</Name>
-            </NormalGUI>
-            <Controls>
-              <GUILabel>
-                <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
-                <Font>0</Font>
-                <Text>@GAMENAME@</Text>
-                <Height>12</Height>
-                <Locked>True</Locked>
-                <Width>80</Width>
-                <Left>1</Left>
-                <Top>1</Top>
-                <ZOrder>0</ZOrder>
-                <ID>0</ID>
-                <Name>lblGameName</Name>
-              </GUILabel>
-              <GUILabel>
-                <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>19248</TextColor>
-                <Font>0</Font>
-                <Text xml:space="preserve">Score: @SCORE@</Text>
-                <Height>12</Height>
-                <Locked>True</Locked>
-                <Width>56</Width>
-                <Left>200</Left>
-                <Top>1</Top>
-                <ZOrder>1</ZOrder>
-                <ID>1</ID>
-                <Name>lblScore</Name>
-              </GUILabel>
-              <GUILabel>
-                <TextAlignment>TopMiddle</TextAlignment>
-                <TextColor>19248</TextColor>
-                <Font>0</Font>
-                <Text>@OVERHOTSPOT@</Text>
-                <Height>12</Height>
-                <Locked>True</Locked>
-                <Width>256</Width>
-                <Left>0</Left>
-                <Top>1</Top>
-                <ZOrder>2</ZOrder>
-                <ID>2</ID>
-                <Name>lblOverHotspot</Name>
-              </GUILabel>
-            </Controls>
-          </GUIMain>
-          <GUIMain>
-            <NormalGUI>
-              <OnClick />
               <Height>36</Height>
               <Width>256</Width>
               <Left>0</Left>
               <Top>0</Top>
               <Clickable>True</Clickable>
-              <Visibility>MouseYPos</Visibility>
+              <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>13</PopupYPos>
               <ZOrder>1</ZOrder>
               <BorderColor>32089</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>32089</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>1</ID>
+              <ID>0</ID>
               <Name>gIconbar</Name>
             </NormalGUI>
             <Controls>
@@ -957,7 +902,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2169</BackgroundImage>
-              <ID>2</ID>
+              <ID>1</ID>
               <Name>gInventory</Name>
             </NormalGUI>
             <Controls>
@@ -1096,7 +1041,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2167</BackgroundImage>
-              <ID>3</ID>
+              <ID>2</ID>
               <Name>gPanel</Name>
             </NormalGUI>
             <Controls>
@@ -1409,7 +1354,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2168</BackgroundImage>
-              <ID>4</ID>
+              <ID>3</ID>
               <Name>gRestartYN</Name>
             </NormalGUI>
             <Controls>
@@ -1486,7 +1431,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2167</BackgroundImage>
-              <ID>5</ID>
+              <ID>4</ID>
               <Name>gSaveGame</Name>
             </NormalGUI>
             <Controls>
@@ -1618,7 +1563,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2167</BackgroundImage>
-              <ID>6</ID>
+              <ID>5</ID>
               <Name>gRestoreGame</Name>
             </NormalGUI>
             <Controls>
@@ -1705,7 +1650,7 @@
               <Padding>3</Padding>
               <BackgroundColor>19248</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>7</ID>
+              <ID>6</ID>
               <Name>gTextBorder</Name>
             </TextWindowGUI>
             <Controls>
@@ -1814,7 +1759,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>2168</BackgroundImage>
-              <ID>8</ID>
+              <ID>7</ID>
               <Name>gExitGame</Name>
             </NormalGUI>
             <Controls>
@@ -2143,7 +2088,7 @@
             <StartX>113</StartX>
             <StartY>225</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeed>8</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>4</AnimationDelay>
@@ -2153,7 +2098,7 @@
             <Clickable>True</Clickable>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
             <DiagonalLoops>True</DiagonalLoops>
             <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
             <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
@@ -3318,6 +3263,13 @@ return
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
+                  <ViewFrame>
+                    <ID>4</ID>
+                    <Image>1</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
                 </Frames>
               </Loop>
               <Loop>
@@ -3338,6 +3290,13 @@ return
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>3</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
                 </Frames>
               </Loop>
               <Loop>
@@ -3354,6 +3313,13 @@ return
                   <ViewFrame>
                     <ID>1</ID>
                     <Image>6</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>3</Image>
                     <Flipped>True</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -3389,6 +3355,13 @@ return
                     <ID>3</ID>
                     <Image>5</Image>
                     <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>4</ID>
+                    <Image>2</Image>
+                    <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
