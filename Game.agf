@@ -1925,6 +1925,141 @@
               </GUITextWindowEdge>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>80</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>160</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>2</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>8</BackgroundColor>
+              <BackgroundImage>18</BackgroundImage>
+              <ID>9</ID>
+              <Name>gPokeDialogue</Name>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve"> </Text>
+                <Height>46</Height>
+                <Locked>False</Locked>
+                <Width>286</Width>
+                <Left>17</Left>
+                <Top>16</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>lDialogueLabel</Name>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <TextWindowGUI>
+              <TextColor>65535</TextColor>
+              <Padding>0</Padding>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>10</ID>
+              <Name>gBlocker</Name>
+            </TextWindowGUI>
+            <Controls>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>0</Left>
+                <Top>90</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>90</Left>
+                <Top>0</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>90</Left>
+                <Top>90</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>0</Left>
+                <Top>40</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>90</Left>
+                <Top>40</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>40</Left>
+                <Top>0</Top>
+                <ZOrder>6</ZOrder>
+                <ID>6</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>19</Image>
+                <Height>1</Height>
+                <Locked>False</Locked>
+                <Width>1</Width>
+                <Left>40</Left>
+                <Top>90</Top>
+                <ZOrder>7</ZOrder>
+                <ID>7</ID>
+                <Name />
+              </GUITextWindowEdge>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2420,6 +2555,16 @@ return
         <SourceFilename xml:space="preserve">assets/fonts/Pokemon Classic.ttf</SourceFilename>
         <VerticalOffset>0</VerticalOffset>
         <LineSpacing>0</LineSpacing>
+      </Font>
+      <Font>
+        <ID>4</ID>
+        <PointSize>10</PointSize>
+        <Name>BetterFont</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>None</OutlineStyle>
+        <SourceFilename>assets/fonts/PressStart2P-Regular.ttf</SourceFilename>
+        <VerticalOffset>0</VerticalOffset>
+        <LineSpacing>12</LineSpacing>
       </Font>
     </Fonts>
     <Palette>
@@ -2919,6 +3064,7 @@ return
                   <Sprite Slot="12" Width="7" Height="7" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                   <Sprite Slot="13" Width="7" Height="7" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                   <Sprite Slot="14" Width="7" Height="7" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+                  <Sprite Slot="19" Width="1" Height="1" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                 </Sprites>
               </SpriteFolder>
               <SpriteFolder Name="UI">
@@ -2945,6 +3091,11 @@ return
                   <Sprite Slot="2167" Width="259" Height="157" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                   <Sprite Slot="2168" Width="205" Height="65" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                   <Sprite Slot="2169" Width="223" Height="133" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+                  <Sprite Slot="18" Width="320" Height="80" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/textbox/dialogueGUI.png</FileName>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
               <SpriteFolder Name="Cursors">
