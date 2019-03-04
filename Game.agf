@@ -73,7 +73,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Pouch Creatures</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>6</AudioIndexer>
       <BuildTargets>Windows</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
@@ -635,19 +635,23 @@
         <UnloadedRooms>
           <UnloadedRoom>
             <Number>1</Number>
-            <Description IsNull="True" />
+            <Description>Arcade</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>2</Number>
-            <Description IsNull="True" />
+            <Description>Room</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>3</Number>
-            <Description IsNull="True" />
+            <Description>House</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>4</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Pallet Town</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>10</Number>
+            <Description xml:space="preserve">Start Menu</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -2407,6 +2411,16 @@ return
         <VerticalOffset>0</VerticalOffset>
         <LineSpacing>0</LineSpacing>
       </Font>
+      <Font>
+        <ID>3</ID>
+        <PointSize>12</PointSize>
+        <Name>PokeFont</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>None</OutlineStyle>
+        <SourceFilename xml:space="preserve">assets/fonts/Pokemon Classic.ttf</SourceFilename>
+        <VerticalOffset>0</VerticalOffset>
+        <LineSpacing>0</LineSpacing>
+      </Font>
     </Fonts>
     <Palette>
       <PaletteEntry Index="0" Type="Gamewide" Red="0" Green="0" Blue="0" />
@@ -3136,6 +3150,11 @@ return
               <Sprite Slot="4" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="5" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="6" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="17" Width="112" Height="112" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                <Source>
+                  <FileName>assets/sprites/oak.png</FileName>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
         </SubFolders>
@@ -3586,7 +3605,80 @@ See KeyboardMovement.txt for details.
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aMain_Theme</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Main Theme.mp3</SourceFileName>
+                <Index>1</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-02-28 03:34:25Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aPallet_Town</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Pallet Town.mp3</SourceFileName>
+                <Index>2</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-02-28 03:38:48Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aOaks_Lab</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Professor Oaks Lab.mp3</SourceFileName>
+                <Index>3</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-02-28 04:07:01Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aOaks_Theme</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Professor Oaks Theme.mp3</SourceFileName>
+                <Index>4</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-02-28 03:47:44Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aRival_Appears</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Rival Appears.mp3</SourceFileName>
+                <Index>5</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-02-28 04:45:02Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aWelcome</ScriptName>
+                <SourceFileName xml:space="preserve">assets/music/Welcome to the World of Pokémon! - Pokémon Red &amp; Blue_Green Music Extended.mp3</SourceFileName>
+                <Index>6</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-03-02 06:24:58Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
