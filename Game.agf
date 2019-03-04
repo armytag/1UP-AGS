@@ -3607,8 +3607,8 @@ See KeyboardMovement.txt for details.
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <ScriptName>aMain_Theme</ScriptName>
                 <SourceFileName xml:space="preserve">assets/music/Pokemon Red Music - Main Theme.mp3</SourceFileName>
+                <ScriptName>aMain_Theme</ScriptName>
                 <Index>1</Index>
                 <Type>2</Type>
                 <BundlingType>InSeparateVOX</BundlingType>
