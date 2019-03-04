@@ -2345,10 +2345,10 @@
             <StartX>367</StartX>
             <StartY>480</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>12</MovementSpeed>
+            <MovementSpeed>8</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
-            <AnimationDelay>6</AnimationDelay>
+            <AnimationDelay>2</AnimationDelay>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <Solid>True</Solid>
