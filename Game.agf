@@ -661,6 +661,10 @@
             <Number>10</Number>
             <Description xml:space="preserve">Start Menu</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>9</Number>
+            <Description xml:space="preserve">New Game</Description>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2068,6 +2072,456 @@
               </GUITextWindowEdge>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>208</Height>
+              <Width>144</Width>
+              <Left>176</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>120</BackgroundImage>
+              <ID>11</ID>
+              <Name>gPokeMenu</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>POKeMON</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>23</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bPokemon</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>ITEM</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>50</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bItem</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>NAME</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>78</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>bName</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>SAVE</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>108</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>bSAVE</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>OPTION</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>136</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>bOPTION</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>EXIT</Text>
+                <Height>16</Height>
+                <Locked>False</Locked>
+                <Width>100</Width>
+                <Left>19</Left>
+                <Top>164</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name>bExit</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>240</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>12</ID>
+              <Name>gNaming</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bNewName_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text xml:space="preserve">NEW NAME</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>80</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bNewName</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bRed_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>RED</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>104</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bRed</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bAsh_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>ASH</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>128</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>bAsh</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bJohn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>JOHN</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>152</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>bJohn</Name>
+              </GUIButton>
+              <GUITextBox>
+                <OnActivate>bCustomName_OnActivate</OnActivate>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <ShowBorder>True</ShowBorder>
+                <Text />
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>32</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>bCustomName</Name>
+              </GUITextBox>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>240</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>13</ID>
+              <Name>gRivalNaming</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bNewRivalName_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text xml:space="preserve">NEW NAME</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>80</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bNewRivalName</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bBlue_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>BLUE</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>104</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bBlue</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bGary_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>GARY</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>128</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>bGary</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bJack_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>JACK</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>152</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>bJack</Name>
+              </GUIButton>
+              <GUITextBox>
+                <OnActivate>bCustomRivalName_OnActivate</OnActivate>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <ShowBorder>True</ShowBorder>
+                <Text />
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>32</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>bCustomRivalName</Name>
+              </GUITextBox>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>240</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>14</ID>
+              <Name>gNewGame</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bNewGame_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text xml:space="preserve">NEW GAME</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>64</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bNewGame</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bOption_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>BottomLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>OPTION</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>240</Width>
+                <Left>40</Left>
+                <Top>96</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bNewOption</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -3160,6 +3614,21 @@ return
           <Type>bool</Type>
           <DefaultValue>false</DefaultValue>
         </GlobalVariable>
+        <GlobalVariable>
+          <Name>name</Name>
+          <Type>String</Type>
+          <DefaultValue>ASH</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>riv_name</Name>
+          <Type>String</Type>
+          <DefaultValue>GARY</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>canShowMenu</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
       </Variables>
     </GlobalVariables>
     <Sprites>
@@ -3424,6 +3893,11 @@ return
                       <FileName>assets/textbox/dialogueGUI.png</FileName>
                     </Source>
                   </Sprite>
+                  <Sprite Slot="120" Width="144" Height="208" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/textbox/menuGUI.png</FileName>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
               <SpriteFolder Name="Cursors">
@@ -3655,6 +4129,10 @@ return
               <Sprite Slot="38" Width="26" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="39" Width="24" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
             </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="gNamingImport">
+            <SubFolders />
+            <Sprites />
           </SpriteFolder>
         </SubFolders>
         <Sprites>
