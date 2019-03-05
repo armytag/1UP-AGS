@@ -665,6 +665,14 @@
             <Number>9</Number>
             <Description xml:space="preserve">New Game</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>7</Number>
+            <Description xml:space="preserve">Pokemon Selection</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>8</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2522,6 +2530,195 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>80</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>160</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>10</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>18</BackgroundImage>
+              <ID>15</ID>
+              <Name>gConfirmCharmander</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bCharmanderYes_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>YES</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>64</Left>
+                <Top>32</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bCharmanderYes</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bCharmanderNo_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>19</Image>
+                <Text>NO</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>196</Left>
+                <Top>32</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bCharmanderNo</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>80</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>160</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>10</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>52</BackgroundImage>
+              <ID>16</ID>
+              <Name>gConfirmSquirtle</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bSquirtleYes_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>53</Image>
+                <Text>YES</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>64</Left>
+                <Top>32</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bSquirtleYes</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bSquirtleNo_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>53</Image>
+                <Text>NO</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>196</Left>
+                <Top>32</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bCharmanderNo2</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>80</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>160</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>10</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>54</BackgroundImage>
+              <ID>17</ID>
+              <Name>gConfirmBulbasaur</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>bBulbasaurYes_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>55</Image>
+                <Text>YES</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>64</Left>
+                <Top>32</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>bBulbasaurYes</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>bBulbasaurNo_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>55</Image>
+                <Text>NO</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>40</Width>
+                <Left>196</Left>
+                <Top>32</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>bBulbasaurNo</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -3147,6 +3344,46 @@
               <Event Index="0">nerdGirl_Look</Event>
               <Event Index="1">nerdGirl_Interact</Event>
               <Event Index="2">nerdGirl_Talk</Event>
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>10</ID>
+            <ScriptName>cProf</ScriptName>
+            <RealName xml:space="preserve">Prof Oak</RealName>
+            <NormalView>9</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>4</StartingRoom>
+            <StartX>-100</StartX>
+            <StartY>-100</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>5</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>2</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -3952,6 +4189,41 @@ return
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="Pokemon">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="46" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/sprites/bulbasaur.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="47" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/sprites/charmander.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="48" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>assets/sprites/squirtle.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="49" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>assets/sprites/bulbasaur_back.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="50" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>assets/sprites/charmander_back.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="51" Width="56" Height="56" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>assets/sprites/squirtle_back.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="2000" Width="25" Height="50" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
@@ -4128,11 +4400,31 @@ return
               <Sprite Slot="37" Width="28" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="38" Width="26" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="39" Width="24" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="40" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="41" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="42" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="43" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="44" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="45" Width="32" Height="32" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="gNamingImport">
             <SubFolders />
             <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gConfirmCharmanderImport">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="52" Width="320" Height="80" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="53" Width="1" Height="1" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="gConfirmCharmanderImport">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="54" Width="320" Height="80" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="55" Width="1" Height="1" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+            </Sprites>
           </SpriteFolder>
         </SubFolders>
         <Sprites>
@@ -4852,6 +5144,148 @@ return
                   <ViewFrame>
                     <ID>0</ID>
                     <Image>37</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>9</ID>
+            <Name>OAK</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>40</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>43</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>40</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>3</ID>
+                    <Image>43</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>4</ID>
+                    <Image>40</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>42</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>45</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>42</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>42</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>45</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>42</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>41</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>44</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>41</Image>
+                    <Flipped>True</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>3</ID>
+                    <Image>44</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>4</ID>
+                    <Image>41</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
